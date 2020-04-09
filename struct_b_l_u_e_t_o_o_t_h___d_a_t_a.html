@@ -25,7 +25,7 @@
    <div id="projectname">IA.I.R.E
    &#160;<span id="projectnumber">1.0.0</span>
    </div>
-   <div id="projectbrief">Mechanical Ventilator</div>
+   <div id="projectbrief">Mechanical Ventilator with ESP32 module</div>
   </td>
  </tr>
  </tbody>
@@ -74,37 +74,59 @@ $(function() {
 <p>Bluetooth data structure.  
  <a href="struct_b_l_u_e_t_o_o_t_h___d_a_t_a.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="bluetooth_8h_source.html">bluetooth.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="bluetooth___i_a_i_r_e_8hpp_source.html">bluetooth_IAIRE.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a429f05491f0e9e5b356153b546dc3d3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bluetooth_8h.html#a2831ffd5f00b9274a0517162c02bcbfb">BLUETOOTH_STATES</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_b_l_u_e_t_o_o_t_h___d_a_t_a.html#a429f05491f0e9e5b356153b546dc3d3c">state</a></td></tr>
-<tr class="memdesc:a429f05491f0e9e5b356153b546dc3d3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">States of state machine.  <a href="struct_b_l_u_e_t_o_o_t_h___d_a_t_a.html#a429f05491f0e9e5b356153b546dc3d3c">More...</a><br /></td></tr>
-<tr class="separator:a429f05491f0e9e5b356153b546dc3d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab21c3aee4645856889f0d188878ec855"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bluetooth_8h.html#a2831ffd5f00b9274a0517162c02bcbfb">BLUETOOTH_STATES</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_b_l_u_e_t_o_o_t_h___d_a_t_a.html#ab21c3aee4645856889f0d188878ec855">frame_state</a></td></tr>
-<tr class="memdesc:ab21c3aee4645856889f0d188878ec855"><td class="mdescLeft">&#160;</td><td class="mdescRight">States of read frame state machine.  <a href="struct_b_l_u_e_t_o_o_t_h___d_a_t_a.html#ab21c3aee4645856889f0d188878ec855">More...</a><br /></td></tr>
-<tr class="separator:ab21c3aee4645856889f0d188878ec855"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a467498229a07b46cba70b5eda0fa041d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_b_l_u_e_t_o_o_t_h___d_a_t_a.html#a467498229a07b46cba70b5eda0fa041d">timeout</a></td></tr>
-<tr class="memdesc:a467498229a07b46cba70b5eda0fa041d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout.  <a href="struct_b_l_u_e_t_o_o_t_h___d_a_t_a.html#a467498229a07b46cba70b5eda0fa041d">More...</a><br /></td></tr>
-<tr class="separator:a467498229a07b46cba70b5eda0fa041d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12520a98ab448fcaebd7307b6f988b90"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_b_l_u_e_t_o_o_t_h___d_a_t_a.html#a12520a98ab448fcaebd7307b6f988b90">readBuff</a> [100]</td></tr>
-<tr class="memdesc:a12520a98ab448fcaebd7307b6f988b90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array to save read frame from bluetooth.  <a href="struct_b_l_u_e_t_o_o_t_h___d_a_t_a.html#a12520a98ab448fcaebd7307b6f988b90">More...</a><br /></td></tr>
-<tr class="separator:a12520a98ab448fcaebd7307b6f988b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f69cabdfa0b974679d3d0546f449578"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_b_l_u_e_t_o_o_t_h___d_a_t_a.html#a3f69cabdfa0b974679d3d0546f449578">index_readBuff</a></td></tr>
-<tr class="memdesc:a3f69cabdfa0b974679d3d0546f449578"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of array to save read frame from bluetooth.  <a href="struct_b_l_u_e_t_o_o_t_h___d_a_t_a.html#a3f69cabdfa0b974679d3d0546f449578">More...</a><br /></td></tr>
-<tr class="separator:a3f69cabdfa0b974679d3d0546f449578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a073169edd56bac0f23460de39185a9ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bluetooth___i_a_i_r_e_8hpp.html#a2831ffd5f00b9274a0517162c02bcbfb">BLUETOOTH_STATES</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_b_l_u_e_t_o_o_t_h___d_a_t_a.html#a073169edd56bac0f23460de39185a9ea">state</a></td></tr>
+<tr class="memdesc:a073169edd56bac0f23460de39185a9ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">States of state machine.  <a href="struct_b_l_u_e_t_o_o_t_h___d_a_t_a.html#a073169edd56bac0f23460de39185a9ea">More...</a><br /></td></tr>
+<tr class="separator:a073169edd56bac0f23460de39185a9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f3a605ce4f04f87d9532f92333a2da0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bluetooth___i_a_i_r_e_8hpp.html#a2831ffd5f00b9274a0517162c02bcbfb">BLUETOOTH_STATES</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_b_l_u_e_t_o_o_t_h___d_a_t_a.html#a8f3a605ce4f04f87d9532f92333a2da0">frame_state</a></td></tr>
+<tr class="memdesc:a8f3a605ce4f04f87d9532f92333a2da0"><td class="mdescLeft">&#160;</td><td class="mdescRight">States of read frame state machine.  <a href="struct_b_l_u_e_t_o_o_t_h___d_a_t_a.html#a8f3a605ce4f04f87d9532f92333a2da0">More...</a><br /></td></tr>
+<tr class="separator:a8f3a605ce4f04f87d9532f92333a2da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2c8d7f7503b3f3a5ea8468f987e8de7"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_b_l_u_e_t_o_o_t_h___d_a_t_a.html#af2c8d7f7503b3f3a5ea8468f987e8de7">connection_state</a></td></tr>
+<tr class="memdesc:af2c8d7f7503b3f3a5ea8468f987e8de7"><td class="mdescLeft">&#160;</td><td class="mdescRight">States of connection.  <a href="struct_b_l_u_e_t_o_o_t_h___d_a_t_a.html#af2c8d7f7503b3f3a5ea8468f987e8de7">More...</a><br /></td></tr>
+<tr class="separator:af2c8d7f7503b3f3a5ea8468f987e8de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b8bcbd4ad79c0a344c5d0fc1d933c51"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_b_l_u_e_t_o_o_t_h___d_a_t_a.html#a6b8bcbd4ad79c0a344c5d0fc1d933c51">timeout_led_blink</a></td></tr>
+<tr class="memdesc:a6b8bcbd4ad79c0a344c5d0fc1d933c51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout led blink.  <a href="struct_b_l_u_e_t_o_o_t_h___d_a_t_a.html#a6b8bcbd4ad79c0a344c5d0fc1d933c51">More...</a><br /></td></tr>
+<tr class="separator:a6b8bcbd4ad79c0a344c5d0fc1d933c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f1ad43d3bf79b40bc39dbb5a6c3a5ae"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_b_l_u_e_t_o_o_t_h___d_a_t_a.html#a7f1ad43d3bf79b40bc39dbb5a6c3a5ae">timeout</a></td></tr>
+<tr class="memdesc:a7f1ad43d3bf79b40bc39dbb5a6c3a5ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout.  <a href="struct_b_l_u_e_t_o_o_t_h___d_a_t_a.html#a7f1ad43d3bf79b40bc39dbb5a6c3a5ae">More...</a><br /></td></tr>
+<tr class="separator:a7f1ad43d3bf79b40bc39dbb5a6c3a5ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0795b4aa261dfa273fc98b31db89a4c"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_b_l_u_e_t_o_o_t_h___d_a_t_a.html#ae0795b4aa261dfa273fc98b31db89a4c">readBuff</a> [100]</td></tr>
+<tr class="memdesc:ae0795b4aa261dfa273fc98b31db89a4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array to save read frame from bluetooth.  <a href="struct_b_l_u_e_t_o_o_t_h___d_a_t_a.html#ae0795b4aa261dfa273fc98b31db89a4c">More...</a><br /></td></tr>
+<tr class="separator:ae0795b4aa261dfa273fc98b31db89a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ee86801f61ecf8394f5c36c69ffbc34"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_b_l_u_e_t_o_o_t_h___d_a_t_a.html#a9ee86801f61ecf8394f5c36c69ffbc34">index_readBuff</a></td></tr>
+<tr class="memdesc:a9ee86801f61ecf8394f5c36c69ffbc34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of array to save read frame from bluetooth.  <a href="struct_b_l_u_e_t_o_o_t_h___d_a_t_a.html#a9ee86801f61ecf8394f5c36c69ffbc34">More...</a><br /></td></tr>
+<tr class="separator:a9ee86801f61ecf8394f5c36c69ffbc34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Bluetooth data structure. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="ab21c3aee4645856889f0d188878ec855"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab21c3aee4645856889f0d188878ec855">&#9670;&nbsp;</a></span>frame_state</h2>
+<a id="af2c8d7f7503b3f3a5ea8468f987e8de7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2c8d7f7503b3f3a5ea8468f987e8de7">&#9670;&nbsp;</a></span>connection_state</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="bluetooth_8h.html#a2831ffd5f00b9274a0517162c02bcbfb">BLUETOOTH_STATES</a> BLUETOOTH_DATA::frame_state</td>
+          <td class="memname">uint8_t connection_state</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>States of connection. </p>
+
+</div>
+</div>
+<a id="a8f3a605ce4f04f87d9532f92333a2da0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f3a605ce4f04f87d9532f92333a2da0">&#9670;&nbsp;</a></span>frame_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="bluetooth___i_a_i_r_e_8hpp.html#a2831ffd5f00b9274a0517162c02bcbfb">BLUETOOTH_STATES</a> frame_state</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -113,14 +135,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a3f69cabdfa0b974679d3d0546f449578"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f69cabdfa0b974679d3d0546f449578">&#9670;&nbsp;</a></span>index_readBuff</h2>
+<a id="a9ee86801f61ecf8394f5c36c69ffbc34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ee86801f61ecf8394f5c36c69ffbc34">&#9670;&nbsp;</a></span>index_readBuff</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t BLUETOOTH_DATA::index_readBuff</td>
+          <td class="memname">uint8_t index_readBuff</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -129,14 +151,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a12520a98ab448fcaebd7307b6f988b90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12520a98ab448fcaebd7307b6f988b90">&#9670;&nbsp;</a></span>readBuff</h2>
+<a id="ae0795b4aa261dfa273fc98b31db89a4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0795b4aa261dfa273fc98b31db89a4c">&#9670;&nbsp;</a></span>readBuff</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char BLUETOOTH_DATA::readBuff[100]</td>
+          <td class="memname">char readBuff[100]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -145,14 +167,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a429f05491f0e9e5b356153b546dc3d3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a429f05491f0e9e5b356153b546dc3d3c">&#9670;&nbsp;</a></span>state</h2>
+<a id="a073169edd56bac0f23460de39185a9ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a073169edd56bac0f23460de39185a9ea">&#9670;&nbsp;</a></span>state</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="bluetooth_8h.html#a2831ffd5f00b9274a0517162c02bcbfb">BLUETOOTH_STATES</a> BLUETOOTH_DATA::state</td>
+          <td class="memname"><a class="el" href="bluetooth___i_a_i_r_e_8hpp.html#a2831ffd5f00b9274a0517162c02bcbfb">BLUETOOTH_STATES</a> state</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -161,14 +183,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a467498229a07b46cba70b5eda0fa041d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a467498229a07b46cba70b5eda0fa041d">&#9670;&nbsp;</a></span>timeout</h2>
+<a id="a7f1ad43d3bf79b40bc39dbb5a6c3a5ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f1ad43d3bf79b40bc39dbb5a6c3a5ae">&#9670;&nbsp;</a></span>timeout</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t BLUETOOTH_DATA::timeout</td>
+          <td class="memname">uint16_t timeout</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -177,13 +199,29 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a6b8bcbd4ad79c0a344c5d0fc1d933c51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b8bcbd4ad79c0a344c5d0fc1d933c51">&#9670;&nbsp;</a></span>timeout_led_blink</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t timeout_led_blink</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Timeout led blink. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="bluetooth_8h_source.html">bluetooth.h</a></li>
+<li>C:/Users/IADEV005/Documents/MPLABX/IA.I.R.E/ESP32/src/<a class="el" href="bluetooth___i_a_i_r_e_8hpp_source.html">bluetooth_IAIRE.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 29 2020 13:03:46 for IA.I.R.E by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['deviceaddressslave1_304',['deviceAddressSlave1',['../i2c_8h.html#a6ae4e72615d019f849559ddb3583e8ae',1,'i2c.h']]]
+  ['delay_5fsamples_254',['delay_samples',['../struct_a_d_c___d_a_t_a.html#a6bf7575599ab57ec3106b861ae2319b9',1,'ADC_DATA']]]
 ];
